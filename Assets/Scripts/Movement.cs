@@ -8,13 +8,6 @@ public class Movement : MonoBehaviour
 
     private float direction = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        print("Hello world!");
-    }
-
-    // Update is called once per frame
     void Update()
     {
         direction = Input.GetAxisRaw("Horizontal");
