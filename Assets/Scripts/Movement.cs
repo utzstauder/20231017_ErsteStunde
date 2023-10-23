@@ -11,9 +11,6 @@ public class Movement : MonoBehaviour
     void Update()
     {
         direction = Input.GetAxisRaw("Horizontal");
-
-        // transform.position = transform.position + new Vector3(speed, 0, 0);
-        // transform.position += new Vector3(speed, 0, 0);
         transform.position += Vector3.right * direction * speed * Time.deltaTime;
     }
 }
